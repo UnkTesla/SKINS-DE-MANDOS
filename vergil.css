@@ -1,0 +1,35 @@
+/* ============================================
+   VERGIL — Azul Yamato / Cian frio
+   GamePadViewer editcss - Xbox One skin
+   ============================================ */
+
+body {
+  background: radial-gradient(circle at 50% 40%, #0a1e4a 0%, #05102a 55%, #000 100%) !important;
+  margin: 0;
+  overflow: hidden;
+}
+
+.controller {
+  filter: sepia(1) saturate(3.5) hue-rotate(180deg) brightness(.95) contrast(1.2)
+          drop-shadow(0 0 24px #1e5eff) drop-shadow(0 0 50px rgba(30,94,255,0.25)) !important;
+}
+
+.controller .bumper.pressed {
+  filter: brightness(1.9) drop-shadow(0 0 14px #00e5ff) !important;
+}
+.controller .button.pressed {
+  filter: brightness(1.9) drop-shadow(0 0 14px #00e5ff) !important;
+}
+.controller .trigger.pressed {
+  filter: brightness(1.5) drop-shadow(0 0 10px #1e5eff) !important;
+}
+.controller .back.pressed,
+.controller .start.pressed {
+  filter: brightness(1.6) drop-shadow(0 0 10px #1e5eff) !important;
+}
+.controller .stick.pressed {
+  filter: brightness(1.4) drop-shadow(0 0 10px #00e5ff) !important;
+}
+.controller .face.pressed {
+  filter: brightness(1.6) drop-shadow(0 0 10px #1e5eff) !important;
+}
