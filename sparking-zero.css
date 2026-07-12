@@ -1,43 +1,39 @@
-/*
- * DRAGON BALL SPARKING ZERO - GamePadViewer EditCSS
- * Skin: Xbox One | Param: editcss=
- * URL: https://gamepadviewer.com/?p=1&s=1&editcss=TU_URL_RAW
- *
- * Aura de ki dorado/naranja sobre todo el mando.
- * Fondo radial inspirado en la energía Saiyan.
- */
+/* ============================================
+   DRAGON BALL SPARKING ZERO
+   GamePadViewer editcss - Xbox One skin
+   ============================================ */
 
-/* === FONDO TEMÁTICO === */
+/* Fondo aura Ki dorado/naranja */
 body {
-  background: radial-gradient(circle at 50% 45%, #ff9500 0%, #b23600 35%, #1a0d00 100%) !important;
-  margin: 0 !important;
-  overflow: hidden !important;
+  background: radial-gradient(circle at 50% 45%, #ff8a00 0%, #b23600 40%, #1a0d00 100%) !important;
+  margin: 0;
+  overflow: hidden;
 }
 
-/* === CUERPO DEL MANDO (teñido completo) === */
-.controller.edit {
-  filter: sepia(0.9) saturate(3.5) hue-rotate(-10deg) brightness(1.1) drop-shadow(0 0 30px rgba(255,179,0,0.6));
+/* Cuerpo del mando completo: tono dorado ki */
+.controller {
+  filter: sepia(1) saturate(4) hue-rotate(-15deg) brightness(1.05)
+          drop-shadow(0 0 25px #ffb300) drop-shadow(0 0 50px rgba(255,150,0,0.3)) !important;
 }
 
-/* === BOTONES PRESIONADOS === */
-.edit .button.pressed,
-.edit .bumper.pressed,
-.edit .back.pressed,
-.edit .start.pressed {
-  filter: brightness(2) drop-shadow(0 0 12px #ffd000) drop-shadow(0 0 20px #ff9500) !important;
+/* Botones presionados */
+.controller .bumper.pressed {
+  filter: brightness(1.8) drop-shadow(0 0 12px #fff2b0) !important;
 }
-
-/* === TRIGGERS PRESIONADOS === */
-.edit .trigger.pressed {
-  filter: brightness(1.6) drop-shadow(0 0 10px #ffb300) !important;
+.controller .button.pressed {
+  filter: brightness(1.8) drop-shadow(0 0 12px #fff2b0) !important;
 }
-
-/* === STICKS PRESIONADOS === */
-.edit .stick.pressed {
-  filter: brightness(1.5) drop-shadow(0 0 12px #ffd000) !important;
+.controller .trigger.pressed {
+  filter: brightness(1.5) drop-shadow(0 0 10px #ffd000) !important;
 }
-
-/* === DPAD PRESIONADO === */
-.edit .face.pressed {
-  filter: brightness(1.8) drop-shadow(0 0 10px #ff9500) !important;
+.controller .back.pressed,
+.controller .start.pressed {
+  filter: brightness(1.6) drop-shadow(0 0 8px #ffb300) !important;
+}
+.controller .stick.pressed {
+  filter: brightness(1.4) drop-shadow(0 0 10px #ffd000) !important;
+}
+.controller .face.pressed {
+  filter: brightness(1.6) drop-shadow(0 0 8px #ffb300) !important;
+} 0 10px #ff9500) !important;
 }
